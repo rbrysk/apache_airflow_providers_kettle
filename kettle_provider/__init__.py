@@ -1,13 +1,12 @@
-from importlib.metadata import version
+__version__ = ['1.0.2', '1.0.1', '1.0.0']
 
-__name__ = "apache_airflow_providers_kettle"
-__version__ = version(__name__)
+from typing import Any, Dict
 
 
-def get_provider_info():
+def get_provider_info() -> Dict[str, Any]:
     return {
         "package-name": __name__,
         "name": "Kettle Apache Airflow Provider",
         "description": "A simple Apache Airflow Kettle Operator that can invoke jobs and transformations for Linux based systems.",
-        "versions": ["1.0.1", "1.0.0"], 
+        "versions": __version__, 
     }

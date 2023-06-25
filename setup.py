@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-__version__ = "1.0.1"
+__version__ = "1.0.2"
 
 """Perform the package airflow-provider-kettle-operator setup."""
 setup(
@@ -24,5 +24,5 @@ setup(
         "Framework :: Apache Airflow",
         "Framework :: Apache Airflow :: Provider",
     ],
-    python_requires="~=3.8",
+    python_requires="~=3.7",
 )
