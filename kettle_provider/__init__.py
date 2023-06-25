@@ -9,5 +9,5 @@ def get_provider_info():
         "package-name": __name__,
         "name": "Kettle Apache Airflow Provider",
         "description": "A simple Apache Airflow Kettle Operator that can invoke jobs and transformations for Linux based systems.",
-        "versions": ["1.0.0"], 
+        "versions": ["1.0.1", "1.0.0"], 
     }
