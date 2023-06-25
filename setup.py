@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-__version__ = "1.0.3"
+__version__ = "1.0.4"
 
 """Perform the package airflow-provider-kettle-operator setup."""
 setup(

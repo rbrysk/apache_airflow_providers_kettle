@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: apache-airflow-providers-kettle
-Version: 1.0.3
+Version: 1.0.4
 Summary: A simple Apache Airflow Kettle Operator that can invoke jobs and transformations for Linux based systems.
 Home-page: 
 Author: Robert Bryśkiewicz
