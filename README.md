@@ -63,30 +63,30 @@ Below list excludes base parameters inherited from BaseOperator class (such as `
 
 ```
 KettleRunJobOperator(
-    pdipath: str = '/opt/pentaho/data-integration/'                             # PDI installation location
-    filepath: str = '/opt/pentaho/data-integration/jobs/'                       # jobs/ directory within PDI installation
-    file: str | None = None                                                     # .kjb filename to run (with file extension)
-    logfile: str = '/opt/pentaho/data-integration/logs/pdi.kitchen.log',        # logfile for kitchen runs
-    maxloglines: int = 0,                                                       # max log lines for kitchen logfile (0 = no limit)
-    maxlogtimeout: int = 0,                                                     # max log age in seconds for kitchen logfile (0 = no limit)
-    loglevel: str = 'Basic',                                                    # log level (Basic, Detailed, Debug, Rowlevel, Error, Nothing)
-    params: dict[str, str] | None = None,                                       # dictionary of parameters
-    output_encoding: str = 'utf-8',                                             # output encoding for exit commands
+    pdipath: str = '/opt/pentaho/data-integration/'  # PDI installation
+    filepath: str = '/opt/pentaho/data-integration/jobs/'  # PDI jobs directory
+    file: str | None = None  # .kjb file to run
+    logfile: str = '/opt/pentaho/data-integration/logs/pdi.kitchen.log',  # logfile for kitchen runs
+    maxloglines: int = 0,  # max log lines for kitchen logfile (0 = no limit)
+    maxlogtimeout: int = 0,  # max log age in seconds for kitchen logfile (0 = no limit)
+    loglevel: str = 'Basic',  # log level (Basic, Detailed, Debug, Rowlevel, Error, Nothing)
+    params: dict[str, str] | None = None,  # dictionary of parameters
+    output_encoding: str = 'utf-8',  # output encoding for exit commands
     **kwargs
 )
 ```
 
 ```
 KettleRunTransformationOperator(
-    pdipath: str = '/opt/pentaho/data-integration/'
-    filepath: str = '/opt/pentaho/data-integration/transformations/'
-    file: str | None = None
-    logfile: str = '/opt/pentaho/data-integration/logs/pdi.pan.log',
-    maxloglines: int = 0,
-    maxlogtimeout: int = 0,
-    loglevel: str = 'Basic',
-    params: dict[str, str] | None = None,
-    output_encoding: str = 'utf-8',
+    pdipath: str = '/opt/pentaho/data-integration/'  # PDI installation
+    filepath: str = '/opt/pentaho/data-integration/transformations/'  # PDI jobs directory
+    file: str | None = None  # .ktr file to run
+    logfile: str = '/opt/pentaho/data-integration/logs/pdi.pan.log',  # logfile for pan runs
+    maxloglines: int = 0,  # max log lines for kitchen logfile (0 = no limit)
+    maxlogtimeout: int = 0,  # max log age in seconds for kitchen logfile (0 = no limit)
+    loglevel: str = 'Basic',  # log level (Basic, Detailed, Debug, Rowlevel, Error, Nothing)
+    params: dict[str, str] | None = None,  # dictionary of parameters
+    output_encoding: str = 'utf-8',  # output encoding for exit commands
     **kwargs
 )
 ```
