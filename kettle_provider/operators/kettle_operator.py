@@ -86,7 +86,7 @@ class KettleRunJobOperator(BaseOperator):
             -norep=Y '
         # Get additional parameters
         for k, v in self.params.items():
-            pdi_command.append(f'-param:{k}={v}')
+            pdi_command.append(f'-param:{k}={v} ')
         # Execute the command
         result = self.subprocess_hook.run_command(
             command=[bash_path, '-c', pdi_command],
@@ -174,7 +174,7 @@ class KettleRunTransformationOperator(BaseOperator):
             -norep=Y '
         # Get additional parameters
         for k, v in self.params.items():
-            pdi_command.append(f'-param:{k}={v}')
+            pdi_command.append(f'-param:{k}={v} ')
         # Execute the command
         result = self.subprocess_hook.run_command(
             command=[bash_path, '-c', pdi_command],

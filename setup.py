@@ -3,7 +3,7 @@ from setuptools import find_packages, setup
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
-__version__ = "1.0.4"
+__version__ = "1.0.5"
 
 """Perform the package airflow-provider-kettle-operator setup."""
 setup(
@@ -15,7 +15,7 @@ setup(
     entry_points={"apache_airflow_provider": ["provider_info=kettle_provider.__init__:get_provider_info"]},
     license="Apache License 2.0",
     packages=find_packages(exclude=["*tests.*", "*tests"]),
-    install_requires=["apache-airflow>=2.3"],
+    install_requires=["apache-airflow>=2.0"],
     setup_requires=["setuptools", "wheel"],
     author="Robert Bryśkiewicz",
     author_email="bryskiewiczr@pm.me",

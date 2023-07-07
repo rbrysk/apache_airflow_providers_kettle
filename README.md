@@ -10,7 +10,7 @@ Currently, there's no support for CarteServer and the only way to make it work i
 # Requirements
 
 - Python 3.7+
-- Apache Airflow 2.2.5+
+- Apache Airflow 2.0+
 - Hitachi Vantara PDI (within the same container)
 
 # Setup
